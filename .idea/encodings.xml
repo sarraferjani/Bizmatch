@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/BizMacthConfigServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BizMacthConfigServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BizMatchAuthentication/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BizMatchAuthentication/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BizMatchDiscoveryServer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BizMatchDiscoveryServer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BizMatchGateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BizMatchGateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BizMatchUserManagement/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BizMatchUserManagement/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BizMacthConfigServer/BizMacthConfigServer.iml" filepath="$PROJECT_DIR$/BizMacthConfigServer/BizMacthConfigServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BizMatchAuthentication/BizMatchAuthentication.iml" filepath="$PROJECT_DIR$/BizMatchAuthentication/BizMatchAuthentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BizMatchDiscoveryServer/BizMatchDiscoveryServer.iml" filepath="$PROJECT_DIR$/BizMatchDiscoveryServer/BizMatchDiscoveryServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BizMatchMicroServicesProject.iml" filepath="$PROJECT_DIR$/.idea/BizMatchMicroServicesProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BizMatchUserManagement/BizMatchUserManagement.iml" filepath="$PROJECT_DIR$/BizMatchUserManagement/BizMatchUserManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BizMatchGateway/gateway.iml" filepath="$PROJECT_DIR$/BizMatchGateway/gateway.iml" />
+    </modules>
+  </component>
+</project>
