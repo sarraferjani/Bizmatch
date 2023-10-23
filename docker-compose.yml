@@ -1,0 +1,70 @@
+version: '3'
+
+services:
+
+
+  postgres-command:
+      image: postgres:latest
+      restart: always
+      container_name: postgres-command
+      hostname: postgres-command
+      environment:
+        POSTGRES_USER: root
+        POSTGRES_PASSWORD: secret
+
+
+      ports:
+        - "5432:5432"
+      networks:
+        - my_network
+      volumes:
+        - ./data0:/data/db
+
+
+#  postgres-command:
+#        image: postgres:latest
+#        command: ["postgres", "-c", "config_file=/etc/postgresql.conf"]
+#        restart: always
+#        environment:
+#          - POSTGRES_USER=postgres
+#          - POSTGRES_PASSWORD=postgres
+#        ports:
+#          - '5432:5432'
+#        volumes:
+#          - ./postgresql.conf:/etc/postgresql.conf
+#          - ./data0:/var/lib/postgresql/data0
+#          - ./init.sql:/docker-entrypoint-initdb.d/create_tables.sql
+
+  mongo-query:
+      image: mongo:latest
+      container_name: mongo-query
+      hostname: mongo-query
+      environment:
+        MONGO_INITDB_ROOT_USERNAME: root
+        MONGO_INITDB_ROOT_PASSWORD: secret
+        MONGO_INITDB_DATABASE: examples
+      command: [ "--bind_ip_all" ]
+      ports:
+        - "30001:27017"
+      networks:
+        - my_network
+      volumes:
+        - ./init-mongo.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+        - ./data1:/data/db
+  mysql-database:
+    image: mysql:latest
+    container_name: mysql-database
+    hostname: mysql-database
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: event_management
+    ports:
+      - "8081:8081"
+    networks:
+      - my_network
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+
+networks:
+  my_network:
+    driver: bridge
